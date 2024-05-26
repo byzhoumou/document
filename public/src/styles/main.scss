@@ -1,0 +1,18 @@
+:root {
+  --cp-text1: 口#FCA21C;
+  --main-color: red;
+  --nihao-color: #983;
+}
+
+// 局部css变量
+:root {
+  --nihao-color: #983;
+}
+// 一般用于组件
+.footer {
+  --footer-color: green;
+}
+// 覆盖变量
+.btn-color {
+  background-color: red;
+}

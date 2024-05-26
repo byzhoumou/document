@@ -1,0 +1,23 @@
+
+
+
+body,
+#app,
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    background-color: #f7f8fa;
+}
+
+
+[class*=-container] {
+    transition: all .3s cubic-bezier(.645, .045, .355, 1), border 0s, color .1s, font-size 0s;
+    min-height: calc(100vh - 300px);
+  }
+  
