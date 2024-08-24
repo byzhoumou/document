@@ -8,7 +8,7 @@ git add <文件名>
 git commit -m "提交信息"   
 
 # 从远程仓库拉取更新到本地仓库                                                     创建vue3ts项目
-git pull <远程仓库名> <远程分支名>                               npm create vite@latest 《项目名称》 --template ts          git配置代理2条命令： git config --global https.proxy http://127.0.0.1:<端口号>    git config --global https.proxy https://127.0.0.1:<端口号>
+git pull <远程仓库名> <远程分支名>                               npm create vite@latest 《项目名称》 --template ts          git配置代理2条命令： git config --global http.proxy http://127.0.0.1:<端口号>    git config --global https.proxy https://127.0.0.1:<端口号>
 
 # 查看当前 Git 仓库的状态
 git status
@@ -16,8 +16,8 @@ git status
 # 查看提交历史记录                                                                        git提交代码需要设置名字和邮箱：git config --global user.name "你的名字"   git config --global user.email "你的邮箱地址"
 git log
 
-# 创建一个新的分支
-git branch <分支名>
+# 创建一个新的分支                                                           步骤 1: 保存本地更改               步骤 2: 拉取远程代码                   步骤 3: 恢复本地更改            
+git branch <分支名>                                                               git stash                               git pull origin main                     git stash pop
 
 # 切换到指定分支
 git checkout <分支名>
